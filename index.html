@@ -4,22 +4,16 @@
 <head>
   <meta charset="utf-8">
   <meta content="width=device-width, initial-scale=1.0" name="viewport">
-  <title>Dipanjan Portfolio</title>
-  <meta content="" name="description">
-  <meta content="" name="keywords">
-
-  <!-- Favicons -->
-  <!-- <link href="#" rel="icon">
-  <link href="#" rel="apple-touch-icon"> -->
+  <title>Dipanjan Karmakar | MIS Manager & Data Analytics Professional</title>
+  <meta name="description" content="Dipanjan Karmakar – MIS Manager with 10+ years of experience in Data Management, Business Intelligence, Power BI, MS Excel, and Healthcare Analytics. Available for Freelance.">
+  <meta name="keywords" content="MIS Manager, Data Analyst, Power BI, MS Excel, Google Sheets, Business Intelligence, Healthcare MIS, Freelance Data Analyst, Dipanjan Karmakar">
 
   <!-- Fonts -->
   <link href="https://fonts.googleapis.com" rel="preconnect">
   <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin>
-  <link
-    href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
-    rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=DM+Sans:ital,opsz,wght@0,9..40,300;0,9..40,400;0,9..40,500;0,9..40,600;0,9..40,700;1,9..40,300;1,9..40,400&display=swap" rel="stylesheet">
 
-  <!-- Vendor CSS Files -->
+  <!-- Vendor CSS Files (same as original) -->
   <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
   <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
   <link href="assets/vendor/aos/aos.css" rel="stylesheet">
@@ -29,1076 +23,1311 @@
   <!-- Main CSS File -->
   <link href="assets/css/main.css" rel="stylesheet">
 
-  <!-- =======================================================
-  * Template Name: iPortfolio
-  * Template URL: https://bootstrapmade.com/iportfolio-bootstrap-portfolio-websites-template/
-  * Updated: Jun 29 2024 with Bootstrap v5.3.3
-  * Author: BootstrapMade.com
-  * License: https://bootstrapmade.com/license/
-  ======================================================== -->
+  <style>
+    :root {
+      --ink: #0f1117;
+      --ink-soft: #3a3f4a;
+      --cream: #f7f4ef;
+      --gold: #c8922a;
+      --gold-light: #e8b84b;
+      --teal: #1a6b6b;
+      --teal-light: #2a9090;
+      --white: #ffffff;
+      --card-bg: #ffffff;
+      --border: #e2ddd6;
+      --shadow: 0 4px 24px rgba(15,17,23,0.08);
+      --shadow-hover: 0 12px 40px rgba(15,17,23,0.16);
+      --font-display: 'DM Serif Display', Georgia, serif;
+      --font-body: 'DM Sans', system-ui, sans-serif;
+    }
+
+    * { box-sizing: border-box; }
+
+    body {
+      font-family: var(--font-body);
+      color: var(--ink);
+      background: var(--cream);
+    }
+
+    /* ── SIDEBAR HEADER ── */
+    #header {
+      background: var(--ink) !important;
+      border-right: 1px solid rgba(200,146,42,0.2);
+    }
+
+    #header .profile-img img {
+      border: 3px solid var(--gold);
+      box-shadow: 0 0 0 6px rgba(200,146,42,0.15);
+    }
+
+    #header .sitename {
+      font-family: var(--font-display);
+      font-size: 1.15rem;
+      letter-spacing: 0.05em;
+      color: var(--white);
+    }
+
+    #header .navmenu a {
+      font-family: var(--font-body);
+      font-size: 0.85rem;
+      font-weight: 500;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+      color: rgba(255,255,255,0.7) !important;
+      transition: color 0.2s, padding-left 0.2s;
+    }
+
+    #header .navmenu a:hover,
+    #header .navmenu .active {
+      color: var(--gold-light) !important;
+      padding-left: 6px;
+    }
+
+    .social-links a {
+      background: rgba(200,146,42,0.15) !important;
+      color: var(--gold-light) !important;
+      border: 1px solid rgba(200,146,42,0.3);
+      transition: all 0.2s;
+    }
+
+    .social-links a:hover {
+      background: var(--gold) !important;
+      color: var(--ink) !important;
+    }
+
+    /* ── HERO ── */
+    #hero {
+      position: relative !important;
+      overflow: hidden !important;
+      min-height: 100vh !important;
+      background-color: var(--ink) !important;
+      background-image: url('assets/img/d2.png') !important;
+      background-size: cover !important;
+      background-position: center top !important;
+      background-repeat: no-repeat !important;
+    }
+
+    /* Hide the <img> tag — we use CSS background-image instead */
+    #hero > img {
+      display: none !important;
+    }
+
+    #hero::before {
+      content: '' !important;
+      position: absolute !important;
+      inset: 0 !important;
+      background: linear-gradient(
+        to right,
+        rgba(10, 12, 18, 0.88) 0%,
+        rgba(10, 12, 18, 0.65) 55%,
+        rgba(10, 12, 18, 0.38) 100%
+      ) !important;
+      z-index: 1 !important;
+      pointer-events: none !important;
+    }
+
+    #hero .container {
+      position: relative !important;
+      z-index: 2 !important;
+    }
+
+    #hero h2 {
+      font-family: var(--font-display);
+      font-size: clamp(2.5rem, 6vw, 4.5rem);
+      color: var(--white);
+      letter-spacing: -0.02em;
+      line-height: 1.1;
+      margin-bottom: 1rem;
+    }
+
+    #hero h2 span.highlight {
+      color: var(--gold-light);
+    }
+
+    #hero p {
+      font-size: 1.2rem;
+      color: rgba(255,255,255,0.7);
+      font-weight: 300;
+    }
+
+    #hero p .typed {
+      color: var(--gold-light);
+      font-weight: 500;
+    }
+
+    .hero-badges {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.5rem;
+      margin-top: 1.5rem;
+    }
+
+    .hero-badge {
+      background: rgba(200,146,42,0.15);
+      border: 1px solid rgba(200,146,42,0.4);
+      color: var(--gold-light);
+      font-size: 0.78rem;
+      font-weight: 600;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+      padding: 0.35rem 0.85rem;
+      border-radius: 100px;
+    }
+
+    .hero-cta {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.5rem;
+      margin-top: 2rem;
+      background: var(--gold);
+      color: var(--ink);
+      font-weight: 700;
+      font-size: 0.9rem;
+      letter-spacing: 0.05em;
+      text-transform: uppercase;
+      padding: 0.85rem 2rem;
+      border-radius: 4px;
+      text-decoration: none;
+      transition: all 0.2s;
+    }
+
+    .hero-cta:hover {
+      background: var(--gold-light);
+      color: var(--ink);
+      transform: translateY(-2px);
+      box-shadow: 0 8px 24px rgba(200,146,42,0.4);
+    }
+
+    /* ── STATS BAR ── */
+    .stats-bar {
+      background: var(--teal);
+      padding: 2rem 0;
+    }
+
+    .stats-bar .stat-item {
+      text-align: center;
+      color: white;
+      padding: 0.5rem 1rem;
+    }
+
+    .stats-bar .stat-number {
+      font-family: var(--font-display);
+      font-size: 2.2rem;
+      color: var(--gold-light);
+      line-height: 1;
+      display: block;
+    }
+
+    .stats-bar .stat-label {
+      font-size: 0.8rem;
+      text-transform: uppercase;
+      letter-spacing: 0.1em;
+      opacity: 0.85;
+      margin-top: 0.3rem;
+      display: block;
+    }
+
+    /* ── SECTION TITLES ── */
+    .section-title h2 {
+      font-family: var(--font-display);
+      font-size: 2.2rem;
+      color: var(--ink);
+      position: relative;
+      display: inline-block;
+      padding-bottom: 0.5rem;
+    }
+
+    .section-title h2::after {
+      content: '';
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      width: 48px;
+      height: 3px;
+      background: var(--gold);
+      border-radius: 2px;
+    }
+
+    /* ── ABOUT ── */
+    #about {
+      background: var(--white);
+    }
+
+    #about .content h2 {
+      font-family: var(--font-display);
+      font-size: 1.6rem;
+      color: var(--teal);
+    }
+
+    #about .info-list li {
+      padding: 0.4rem 0;
+      border-bottom: 1px solid var(--border);
+      font-size: 0.92rem;
+    }
+
+    #about .info-list li strong {
+      color: var(--ink);
+      min-width: 90px;
+      display: inline-block;
+    }
+
+    #about .info-list li span {
+      color: var(--ink-soft);
+    }
+
+    #about .freelance-badge {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.4rem;
+      background: #e8f5e8;
+      color: #2d7d2d;
+      border: 1px solid #a8d8a8;
+      font-size: 0.82rem;
+      font-weight: 600;
+      padding: 0.4rem 1rem;
+      border-radius: 100px;
+      margin-top: 1.2rem;
+    }
+
+    #about .freelance-badge::before {
+      content: '';
+      width: 8px;
+      height: 8px;
+      background: #2d7d2d;
+      border-radius: 50%;
+      animation: pulse 1.5s infinite;
+    }
+
+    @keyframes pulse {
+      0%, 100% { opacity: 1; transform: scale(1); }
+      50% { opacity: 0.5; transform: scale(1.3); }
+    }
+
+    /* ── SKILLS ── */
+    #skills {
+      background: var(--cream);
+    }
+
+    .skill-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+      gap: 1rem;
+    }
+
+    .skill-card {
+      background: var(--white);
+      border: 1px solid var(--border);
+      border-radius: 8px;
+      padding: 1.2rem 1.4rem;
+      transition: all 0.25s;
+    }
+
+    .skill-card:hover {
+      border-color: var(--gold);
+      box-shadow: var(--shadow-hover);
+      transform: translateY(-3px);
+    }
+
+    .skill-card .skill-name {
+      font-weight: 600;
+      font-size: 0.88rem;
+      color: var(--ink);
+      margin-bottom: 0.6rem;
+    }
+
+    .skill-card .skill-bar {
+      height: 5px;
+      background: var(--border);
+      border-radius: 10px;
+      overflow: hidden;
+    }
+
+    .skill-card .skill-fill {
+      height: 100%;
+      background: linear-gradient(90deg, var(--teal), var(--teal-light));
+      border-radius: 10px;
+      transition: width 1.2s cubic-bezier(0.4, 0, 0.2, 1);
+    }
+
+    .skill-card.expert .skill-fill {
+      background: linear-gradient(90deg, var(--gold), var(--gold-light));
+    }
+
+    .skill-card .skill-level {
+      font-size: 0.75rem;
+      color: var(--ink-soft);
+      margin-top: 0.4rem;
+      font-weight: 500;
+    }
+
+    /* ── CERTIFICATIONS ── */
+    #certifications {
+      background: var(--ink);
+      padding: 60px 0;
+    }
+
+    #certifications .section-title h2 {
+      color: var(--white);
+    }
+
+    #certifications .section-title h2::after {
+      background: var(--gold);
+    }
+
+    #certifications .section-title p {
+      color: rgba(255,255,255,0.6);
+    }
+
+    .cert-card {
+      background: rgba(255,255,255,0.05);
+      border: 1px solid rgba(200,146,42,0.25);
+      border-radius: 8px;
+      padding: 1.5rem;
+      display: flex;
+      align-items: flex-start;
+      gap: 1rem;
+      transition: all 0.25s;
+      text-decoration: none;
+      color: inherit;
+    }
+
+    .cert-card:hover {
+      background: rgba(200,146,42,0.1);
+      border-color: var(--gold);
+      transform: translateY(-3px);
+    }
+
+    .cert-icon {
+      width: 44px;
+      height: 44px;
+      background: rgba(200,146,42,0.2);
+      border-radius: 8px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-shrink: 0;
+      color: var(--gold-light);
+      font-size: 1.2rem;
+    }
+
+    .cert-info h5 {
+      color: var(--white);
+      font-size: 0.92rem;
+      font-weight: 600;
+      margin-bottom: 0.25rem;
+    }
+
+    .cert-info p {
+      color: rgba(255,255,255,0.5);
+      font-size: 0.8rem;
+      margin: 0;
+    }
+
+    .cert-info .cert-year {
+      color: var(--gold-light);
+      font-size: 0.75rem;
+      font-weight: 600;
+      margin-top: 0.3rem;
+      display: block;
+    }
+
+    /* ── RESUME ── */
+    #resume {
+      background: var(--white);
+    }
+
+    .resume-title {
+      font-family: var(--font-display);
+      font-size: 1.3rem;
+      color: var(--teal);
+      border-bottom: 2px solid var(--teal);
+      padding-bottom: 0.5rem;
+      margin-bottom: 1.5rem;
+    }
+
+    .resume-item {
+      position: relative;
+      padding: 0 0 1.5rem 1.5rem;
+      border-left: 2px solid var(--border);
+    }
+
+    .resume-item::before {
+      content: '';
+      position: absolute;
+      left: -7px;
+      top: 4px;
+      width: 12px;
+      height: 12px;
+      border-radius: 50%;
+      background: var(--gold);
+      border: 2px solid var(--white);
+      box-shadow: 0 0 0 3px rgba(200,146,42,0.2);
+    }
+
+    .resume-item h4 {
+      font-weight: 700;
+      font-size: 1rem;
+      color: var(--ink);
+      margin-bottom: 0.1rem;
+    }
+
+    .resume-item h5 {
+      font-size: 0.8rem;
+      font-weight: 600;
+      background: var(--teal);
+      color: white;
+      display: inline-block;
+      padding: 0.15rem 0.6rem;
+      border-radius: 100px;
+      margin-bottom: 0.5rem;
+    }
+
+    .resume-item em {
+      color: var(--teal);
+      font-style: normal;
+      font-weight: 500;
+      font-size: 0.88rem;
+    }
+
+    .resume-item ul {
+      font-size: 0.88rem;
+      color: var(--ink-soft);
+      padding-left: 1.2rem;
+      margin-top: 0.5rem;
+    }
+
+    .resume-item ul li {
+      margin-bottom: 0.3rem;
+    }
+
+    /* ── PORTFOLIO ── */
+    #portfolio {
+      background: var(--cream);
+    }
+
+    .portfolio-content {
+      border-radius: 8px;
+      overflow: hidden;
+      box-shadow: var(--shadow);
+      transition: all 0.3s;
+    }
+
+    .portfolio-content:hover {
+      box-shadow: var(--shadow-hover);
+      transform: translateY(-4px);
+    }
+
+    .portfolio-info {
+      background: var(--ink) !important;
+    }
+
+    .portfolio-info h4 {
+      color: var(--white) !important;
+    }
+
+    .portfolio-info p {
+      color: rgba(255,255,255,0.6) !important;
+    }
+
+    /* ── SERVICES ── */
+    #services {
+      background: var(--white);
+    }
+
+    .service-item {
+      background: var(--cream);
+      border: 1px solid var(--border);
+      border-radius: 8px;
+      padding: 1.5rem;
+      transition: all 0.25s;
+      height: 100%;
+    }
+
+    .service-item:hover {
+      border-color: var(--teal);
+      box-shadow: var(--shadow-hover);
+      transform: translateY(-3px);
+    }
+
+    .service-item .icon {
+      width: 52px;
+      height: 52px;
+      background: linear-gradient(135deg, var(--teal), var(--teal-light));
+      border-radius: 10px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin-bottom: 1rem;
+    }
+
+    .service-item .icon i {
+      color: white;
+      font-size: 1.3rem;
+    }
+
+    .service-item h4 {
+      font-weight: 700;
+      font-size: 1rem;
+      color: var(--ink);
+      margin-bottom: 0.5rem;
+    }
+
+    .service-item p {
+      font-size: 0.88rem;
+      color: var(--ink-soft);
+      margin: 0;
+    }
+
+    /* ── CONTACT ── */
+    #contact {
+      background: var(--cream);
+    }
+
+    .info-wrap {
+      background: var(--ink);
+      border-radius: 12px;
+      padding: 2rem;
+    }
+
+    .info-item {
+      padding: 1rem 0;
+      border-bottom: 1px solid rgba(255,255,255,0.08);
+    }
+
+    .info-item:last-child { border-bottom: none; }
+
+    .info-item i {
+      width: 42px;
+      height: 42px;
+      background: rgba(200,146,42,0.15);
+      border-radius: 8px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: var(--gold-light);
+      font-size: 1.1rem;
+      margin-right: 1rem;
+      flex-shrink: 0;
+    }
+
+    .info-item h3 {
+      color: rgba(255,255,255,0.6);
+      font-size: 0.78rem;
+      text-transform: uppercase;
+      letter-spacing: 0.1em;
+      margin: 0 0 0.2rem;
+    }
+
+    .info-item p {
+      color: var(--white);
+      font-weight: 500;
+      margin: 0;
+      font-size: 0.92rem;
+    }
+
+    /* ── FOOTER ── */
+    footer {
+      background: var(--ink) !important;
+      border-top: 1px solid rgba(200,146,42,0.2);
+    }
+
+    footer p, footer a {
+      color: rgba(255,255,255,0.5) !important;
+      font-size: 0.82rem;
+    }
+
+    footer a:hover {
+      color: var(--gold-light) !important;
+    }
+
+    /* ── AVAILABILITY BANNER ── */
+    .availability-banner {
+      background: linear-gradient(135deg, var(--teal), var(--teal-light));
+      color: white;
+      text-align: center;
+      padding: 1rem;
+      font-size: 0.88rem;
+      font-weight: 500;
+    }
+
+    .availability-banner a {
+      color: var(--gold-light);
+      font-weight: 700;
+      text-decoration: none;
+    }
+
+    .availability-banner a:hover {
+      text-decoration: underline;
+    }
+
+    /* ── SCROLL TOP ── */
+    #scroll-top {
+      background: var(--gold) !important;
+      color: var(--ink) !important;
+    }
+  </style>
 </head>
 
 <body class="index-page">
+
+  <!-- Availability Banner -->
+  <div class="availability-banner">
+    ✅ Available for Freelance Projects &nbsp;·&nbsp; Preferred Hours: After 7:00 PM IST &nbsp;·&nbsp;
+    <a href="#contact">Get in Touch →</a>
+  </div>
 
   <header id="header" class="header dark-background d-flex flex-column">
     <i class="header-toggle d-xl-none bi bi-list"></i>
 
     <div class="profile-img">
-      <img src="assets/img/p.png" alt="" class="img-fluid rounded-circle">
+      <img src="assets/img/p.png" alt="Dipanjan Karmakar" class="img-fluid rounded-circle">
     </div>
 
     <a href="index.html" class="logo d-flex align-items-center justify-content-center">
-      <!-- Uncomment the line below if you also wish to use an image logo -->
-      <!-- <img src="assets/img/logo.png" alt=""> -->
-      <h1 class="sitename">DIPANJAN</h1>
+      <h1 class="sitename">Dipanjan Karmakar</h1>
     </a>
 
     <div class="social-links text-center">
-      <!-- <a href="#" class="twitter"><i class="bi bi-twitter-x"></i></a> -->
-      <!-- <a href="#" class="facebook"><i class="bi bi-facebook"></i></a> -->
-      <!-- <a href="#" class="instagram"><i class="bi bi-instagram"></i></a> -->
-      <!-- <a href="#" class="google-plus"><i class="bi bi-skype"></i></a> -->
-      <a href="https://www.linkedin.com/in/onlinedipanjan" class="linkedin"><i class="bi bi-linkedin"></i></a>
+      <a href="https://www.linkedin.com/in/onlinedipanjan" class="linkedin" target="_blank" title="LinkedIn">
+        <i class="bi bi-linkedin"></i>
+      </a>
     </div>
 
     <nav id="navmenu" class="navmenu">
       <ul>
-        <li><a href="#hero" class="active"><i class="bi bi-house navicon"></i>Home</a></li>
+        <li><a href="#hero" class="active"><i class="bi bi-house navicon"></i> Home</a></li>
         <li><a href="#about"><i class="bi bi-person navicon"></i> About</a></li>
+        <li><a href="#skills"><i class="bi bi-stars navicon"></i> Skills</a></li>
+        <li><a href="#certifications"><i class="bi bi-patch-check navicon"></i> Certifications</a></li>
         <li><a href="#resume"><i class="bi bi-file-earmark-text navicon"></i> Resume</a></li>
         <li><a href="#portfolio"><i class="bi bi-images navicon"></i> Portfolio</a></li>
         <li><a href="#services"><i class="bi bi-hdd-stack navicon"></i> Services</a></li>
-        <!-- <li class="dropdown"><a href="#"><i class="bi bi-menu-button navicon"></i> <span>Dropdown</span> <i
-              class="bi bi-chevron-down toggle-dropdown"></i></a>
-          <ul>
-            <li><a href="#">Dropdown 1</a></li>
-            <li class="dropdown"><a href="#"><span>Deep Dropdown</span> <i
-                  class="bi bi-chevron-down toggle-dropdown"></i></a>
-              <ul>
-                <li><a href="#">Deep Dropdown 1</a></li>
-                <li><a href="#">Deep Dropdown 2</a></li>
-                <li><a href="#">Deep Dropdown 3</a></li>
-                <li><a href="#">Deep Dropdown 4</a></li>
-                <li><a href="#">Deep Dropdown 5</a></li>
-              </ul>
-            </li>
-            <li><a href="#">Dropdown 2</a></li>
-            <li><a href="#">Dropdown 3</a></li>
-            <li><a href="#">Dropdown 4</a></li>
-          </ul> -->
-        </li>
         <li><a href="#contact"><i class="bi bi-envelope navicon"></i> Contact</a></li>
-        <li><a href="https://drive.google.com/file/d/1OAaXUZLCsVIp-ezwQmMlsT4EqZveeu-y/view?usp=sharing" target="_blank"><i class="bi bi-download navicon"></i> Download Resume</a></li>
+        <li>
+          <a href="https://drive.google.com/file/d/1OAaXUZLCsVIp-ezwQmMlsT4EqZveeu-y/view?usp=sharing" target="_blank">
+            <i class="bi bi-download navicon"></i> Download CV
+          </a>
+        </li>
       </ul>
     </nav>
-
   </header>
 
   <main class="main">
 
     <!-- Hero Section -->
     <section id="hero" class="hero section dark-background">
-
-      <img src="assets/img/d2.png" alt="" data-aos="fade-in" class="">
+      <img src="assets/img/d2.png" alt="" data-aos="fade-in">
 
       <div class="container" data-aos="fade-up" data-aos-delay="100">
-        <h2>DIPANJAN KARMAKAR</h2>
-        <p>I'm <span class="typed" data-typed-items="Data Analyst,Freelancer, Data Management Executive"></span><span
-            class="typed-cursor typed-cursor--blink" aria-hidden="true"></span><span
-            class="typed-cursor typed-cursor--blink" aria-hidden="true"></span></p>
+        <h2>DIPANJAN <span class="highlight">KARMAKAR</span></h2>
+        <p>I'm a <span class="typed" data-typed-items="MIS Manager,Data Analyst,Business Intelligence Pro,Healthcare Data Expert,Freelance MIS Executive"></span>
+          <span class="typed-cursor typed-cursor--blink" aria-hidden="true"></span>
+        </p>
+        <div class="hero-badges">
+          <span class="hero-badge">10+ Years Experience</span>
+          <span class="hero-badge">160+ MIS Reports</span>
+          <span class="hero-badge">25+ Clients Served</span>
+          <span class="hero-badge">Healthcare & Finance</span>
+          <span class="hero-badge">Freelance Available</span>
+        </div>
+        <a href="#contact" class="hero-cta">
+          <i class="bi bi-envelope-fill"></i> Hire Me
+        </a>
       </div>
+    </section>
 
-    </section><!-- /Hero Section -->
+    <!-- Stats Bar -->
+    <div class="stats-bar">
+      <div class="container">
+        <div class="row text-center gy-3">
+          <div class="col-6 col-md-3">
+            <div class="stat-item">
+              <span class="stat-number">10+</span>
+              <span class="stat-label">Years Experience</span>
+            </div>
+          </div>
+          <div class="col-6 col-md-3">
+            <div class="stat-item">
+              <span class="stat-number">160+</span>
+              <span class="stat-label">MIS Reports Built</span>
+            </div>
+          </div>
+          <div class="col-6 col-md-3">
+            <div class="stat-item">
+              <span class="stat-number">25+</span>
+              <span class="stat-label">Freelance Clients</span>
+            </div>
+          </div>
+          <div class="col-6 col-md-3">
+            <div class="stat-item">
+              <span class="stat-number">5</span>
+              <span class="stat-label">Hospital Locations</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
 
     <!-- About Section -->
     <section id="about" class="about section">
-
-      <!-- Section Title -->
       <div class="container section-title" data-aos="fade-up">
-        <h2>About</h2>
-        <p>MIS Manager with 10+ Years of Experience in Data Management Systems in various industries such as
-          Automobiles, Cosmetics, Education, and Individual clients with 4+ years of Freelancing experience.
-          Adept at industry-standard tools such as MS Excel, Google Sheets, Google Data Studio, Power BI, Power Query,
-          Google Data Studio. Demonstrated ability to improve Data Management Operations in an Organization and boosting
-          top-line Data Handling</p>
-      </div><!-- End Section Title -->
+        <h2>About Me</h2>
+        <p class="mt-3">
+          Seasoned MIS Manager with over a decade of experience turning raw data into decisions. 
+          I've worked across Healthcare, Automotive, Cosmetics, and Education sectors — building 
+          dashboards, automating reports, and managing critical data pipelines that drive business outcomes.
+        </p>
+      </div>
 
       <div class="container" data-aos="fade-up" data-aos-delay="100">
-
         <div class="row gy-4 justify-content-center">
-          <div class="col-lg-4">
-            <img src="assets/img/p.png" class="img-fluid" alt="">
+          <div class="col-lg-4 text-center">
+            <img src="assets/img/p.png" class="img-fluid rounded" alt="Dipanjan Karmakar" style="max-width:280px; border: 3px solid var(--gold); border-radius: 12px !important;">
           </div>
           <div class="col-lg-8 content">
-            <h2>MIS Manager&amp; Data Management.</h2>
-            <p class="fst-italic py-3">
-              Designed 20+ Flow Chart Management Systems, updated data using Google Sheets and Data Studio, and
-              documented processes with 10+ instructional videos.
+            <h2>MIS Manager & Data Intelligence Professional</h2>
+            <p class="fst-italic py-2" style="color:var(--teal); font-size:0.95rem;">
+              Designed 20+ Flow Chart Management Systems · 160+ MIS Reports · 25+ Freelance Clients · Python & AI-Powered Automation
             </p>
-            <div class="row">
+            <div class="row mt-3">
               <div class="col-lg-6">
-                <ul>
-                  <li><i class="bi bi-chevron-right"></i> <strong>Birthday:</strong> <span>09 July 1990</span></li>
-                  <!--                   <li><i class="bi bi-chevron-right"></i> <strong>Website:</strong> <span>www.example.com</span></li> -->
-                  <li><i class="bi bi-chevron-right"></i> <strong>Phone:</strong> <span>+91 75085-48860</span></li>
-                  <li><i class="bi bi-chevron-right"></i> <strong>City:</strong> <span>Kharar, Punjab</span></li>
+                <ul class="info-list list-unstyled">
+                  <li><strong>Birthday:</strong> <span>09 July 1990</span></li>
+                  <li><strong>Location:</strong> <span>Kharar, Punjab, India</span></li>
+                  <li><strong>Degree:</strong> <span>B.A — Swami Vivekanand Subharti University</span></li>
                 </ul>
               </div>
               <div class="col-lg-6">
-                <ul>
-                  <!-- <li><i class="bi bi-chevron-right"></i> <strong>Age:</strong> <span>34</span></li> -->
-                  <li><i class="bi bi-chevron-right"></i> <strong>Degree:</strong> <span>B.A</span></li>
-                  <li><i class="bi bi-chevron-right"></i> <strong>Email:</strong> <span>wordmsword@gmail.com</span></li>
-                  <li><i class="bi bi-chevron-right"></i> <strong>Freelance:</strong> <span>Available (Prefer Time after
-                      19:00 IST)</span></li>
+                <ul class="info-list list-unstyled">
+                  <li><strong>Email:</strong> <span><a href="mailto:wordmsword@gmail.com" style="color:var(--teal)">wordmsword@gmail.com</a></span></li>
+                  <li><strong>LinkedIn:</strong> <span><a href="https://www.linkedin.com/in/onlinedipanjan" target="_blank" style="color:var(--teal)">onlinedipanjan</a></span></li>
+                  <li><strong>Current Role:</strong> <span>Deputy Manager – Livasa Hospitals</span></li>
                 </ul>
               </div>
             </div>
-            <!-- <p class="py-3">
-              Officiis eligendi itaque labore et dolorum mollitia officiis optio vero. Quisquam sunt adipisci omnis et
-              ut. Nulla accusantium dolor incidunt officia tempore. Et eius omnis.
-              Cupiditate ut dicta maxime officiis quidem quia. Sed et consectetur qui quia repellendus itaque neque.
-            </p> -->
+            <div class="freelance-badge">
+              Freelance Available — Preferred Hours: After 7:00 PM IST
+            </div>
           </div>
         </div>
-
       </div>
-
-    </section><!-- /About Section -->
-
-    <!-- Stats Section -->
-    <section id="stats" class="stats section">
-
-      <div class="container" data-aos="fade-up" data-aos-delay="100">
-
-        <div class="row gy-4">
-
-          <!-- <div class="col-lg-3 col-md-6">
-            <div class="stats-item">
-              <i class="bi bi-emoji-smile"></i>
-              <span data-purecounter-start="0" data-purecounter-end="232" data-purecounter-duration="1"
-                class="purecounter"></span>
-              <p><strong>Happy Clients</strong> <span>consequuntur quae</span></p>
-            </div>
-          </div> -->
-          <!-- End Stats Item -->
-
-          <!-- <div class="col-lg-3 col-md-6">
-            <div class="stats-item">
-              <i class="bi bi-journal-richtext"></i>
-              <span data-purecounter-start="0" data-purecounter-end="521" data-purecounter-duration="1"
-                class="purecounter"></span>
-              <p><strong>Projects</strong> <span>adipisci atque cum quia aut</span></p>
-            </div>
-          </div> -->
-          <!-- End Stats Item -->
-
-          <!-- <div class="col-lg-3 col-md-6">
-            <div class="stats-item">
-              <i class="bi bi-headset"></i>
-              <span data-purecounter-start="0" data-purecounter-end="1453" data-purecounter-duration="1"
-                class="purecounter"></span>
-              <p><strong>Hours Of Support</strong> <span>aut commodi quaerat</span></p>
-            </div>
-          </div> -->
-          <!-- End Stats Item -->
-
-          <!-- <div class="col-lg-3 col-md-6">
-            <div class="stats-item">
-              <i class="bi bi-people"></i>
-              <span data-purecounter-start="0" data-purecounter-end="32" data-purecounter-duration="1"
-                class="purecounter"></span>
-              <p><strong>Hard Workers</strong> <span>rerum asperiores dolor</span></p>
-            </div>
-          </div> -->
-
-          <!-- End Stats Item -->
-
-        </div>
-
-      </div>
-
     </section>
-    <!-- /Stats Section -->
 
     <!-- Skills Section -->
     <section id="skills" class="skills section light-background">
-
-      <!-- Section Title -->
       <div class="container section-title" data-aos="fade-up">
-        <h2>Skills</h2>
-        <p>It’s not my fault if you are talented but it’s my fault if I think I can’t be as talented as you.</p>
-      </div><!-- End Section Title -->
+        <h2>Skills & Expertise</h2>
+        <p class="mt-2">Core tools and technologies I use to deliver data solutions.</p>
+      </div>
 
       <div class="container" data-aos="fade-up" data-aos-delay="100">
+        <div class="skill-grid">
 
-        <div class="row skills-content skills-animation">
-
-          <div class="col-lg-6">
-
-            <div class="progress">
-              <span class="skill"><span>MIS Reports</span> <i class="val">100%</i></span>
-              <div class="progress-bar-wrap">
-                <div class="progress-bar" role="progressbar" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100">
-                </div>
-              </div>
-            </div><!-- End Skills Item -->
-
-            <div class="progress">
-              <span class="skill"><span>Power BI</span> <i class="val">50%</i></span>
-              <div class="progress-bar-wrap">
-                <div class="progress-bar" role="progressbar" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100">
-                </div>
-              </div>
-            </div><!-- End Skills Item -->
-
-            <div class="progress">
-              <span class="skill"><span>Data Analysis</span> <i class="val">75%</i></span>
-              <div class="progress-bar-wrap">
-                <div class="progress-bar" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100">
-                </div>
-              </div>
-            </div><!-- End Skills Item -->
-
+          <div class="skill-card expert">
+            <div class="skill-name"><i class="bi bi-file-earmark-spreadsheet me-2" style="color:var(--gold)"></i>MS Excel</div>
+            <div class="skill-bar"><div class="skill-fill" style="width:95%"></div></div>
+            <div class="skill-level">Expert — Advanced Formulas, Automation</div>
           </div>
 
-          <div class="col-lg-6">
+          <div class="skill-card expert">
+            <div class="skill-name"><i class="bi bi-graph-up me-2" style="color:var(--gold)"></i>MIS Reporting</div>
+            <div class="skill-bar"><div class="skill-fill" style="width:95%"></div></div>
+            <div class="skill-level">Expert — 160+ Reports Built</div>
+          </div>
 
-            <div class="progress">
-              <span class="skill"><span>Google Sheet</span> <i class="val">60%</i></span>
-              <div class="progress-bar-wrap">
-                <div class="progress-bar" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100">
-                </div>
-              </div>
-            </div><!-- End Skills Item -->
+          <div class="skill-card">
+            <div class="skill-name"><i class="bi bi-bar-chart-line me-2" style="color:var(--teal)"></i>Google Data Studio</div>
+            <div class="skill-bar"><div class="skill-fill" style="width:78%"></div></div>
+            <div class="skill-level">Proficient</div>
+          </div>
 
-            <div class="progress">
-              <span class="skill"><span>Google Data Studio</span> <i class="val">75%</i></span>
-              <div class="progress-bar-wrap">
-                <div class="progress-bar" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100">
-                </div>
-              </div>
-            </div><!-- End Skills Item -->
+          <div class="skill-card">
+            <div class="skill-name"><i class="bi bi-table me-2" style="color:var(--teal)"></i>Google Sheets</div>
+            <div class="skill-bar"><div class="skill-fill" style="width:70%"></div></div>
+            <div class="skill-level">Proficient</div>
+          </div>
 
-            <div class="progress">
-              <span class="skill"><span>MS Excel</span> <i class="val">100%</i></span>
-              <div class="progress-bar-wrap">
-                <div class="progress-bar" role="progressbar" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100">
-                </div>
-              </div>
-            </div><!-- End Skills Item -->
+          <div class="skill-card">
+            <div class="skill-name"><i class="bi bi-pie-chart me-2" style="color:var(--teal)"></i>Power BI</div>
+            <div class="skill-bar"><div class="skill-fill" style="width:60%"></div></div>
+            <div class="skill-level">Intermediate</div>
+          </div>
 
-            <div class="progress">
-              <span class="skill"><span>Data Management</span> <i class="val">50%</i></span>
-              <div class="progress-bar-wrap">
-                <div class="progress-bar" role="progressbar" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100">
-                </div>
-              </div>
-              <!-- End Skills Item -->
+          <div class="skill-card">
+            <div class="skill-name"><i class="bi bi-funnel me-2" style="color:var(--teal)"></i>Power Query</div>
+            <div class="skill-bar"><div class="skill-fill" style="width:65%"></div></div>
+            <div class="skill-level">Intermediate</div>
+          </div>
 
+          <div class="skill-card">
+            <div class="skill-name"><i class="bi bi-database me-2" style="color:var(--teal)"></i>Data Management</div>
+            <div class="skill-bar"><div class="skill-fill" style="width:85%"></div></div>
+            <div class="skill-level">Advanced</div>
+          </div>
 
+          <div class="skill-card">
+            <div class="skill-name"><i class="bi bi-code-slash me-2" style="color:var(--teal)"></i>Python (Scripting)</div>
+            <div class="skill-bar"><div class="skill-fill" style="width:45%"></div></div>
+            <div class="skill-level">Working Knowledge</div>
+          </div>
 
+          <div class="skill-card">
+            <div class="skill-name"><i class="bi bi-people me-2" style="color:var(--teal)"></i>CRM / ERP Systems</div>
+            <div class="skill-bar"><div class="skill-fill" style="width:75%"></div></div>
+            <div class="skill-level">Proficient</div>
+          </div>
 
-
-            </div>
-
+          <div class="skill-card">
+            <div class="skill-name"><i class="bi bi-wordpress me-2" style="color:var(--teal)"></i>WordPress Dev</div>
+            <div class="skill-bar"><div class="skill-fill" style="width:70%"></div></div>
+            <div class="skill-level">Proficient — 25+ Sites</div>
           </div>
 
         </div>
+      </div>
+    </section>
 
-    </section><!-- /Skills Section -->
+    <!-- Certifications Section (NEW) -->
+    <section id="certifications" class="section">
+      <div class="container section-title" data-aos="fade-up">
+        <h2>Certifications</h2>
+        <p class="mt-2" style="color:rgba(255,255,255,0.6)">Verified credentials from recognized institutions.</p>
+      </div>
+
+      <div class="container" data-aos="fade-up" data-aos-delay="100">
+        <div class="row gy-3">
+
+          <div class="col-lg-4 col-md-6">
+            <a href="https://www.mygreatlearning.com/certificate/PGQYFBPV" target="_blank" class="cert-card">
+              <div class="cert-icon"><i class="bi bi-robot"></i></div>
+              <div class="cert-info">
+                <h5>Introduction to Artificial Intelligence</h5>
+                <p>Great Learning</p>
+                <span class="cert-year">2024 · Verified Certificate</span>
+              </div>
+            </a>
+          </div>
+
+          <div class="col-lg-4 col-md-6">
+            <a href="https://www.mygreatlearning.com/certificate/LERLHFSR" target="_blank" class="cert-card">
+              <div class="cert-icon"><i class="bi bi-file-earmark-bar-graph"></i></div>
+              <div class="cert-info">
+                <h5>Excel for Data Science — Beginners</h5>
+                <p>Great Learning</p>
+                <span class="cert-year">2024 · Verified Certificate</span>
+              </div>
+            </a>
+          </div>
+
+          <div class="col-lg-4 col-md-6">
+            <a href="https://moonshot.scaler.com/s/sl/nAVP8uuFfk" target="_blank" class="cert-card">
+              <div class="cert-icon"><i class="bi bi-code-slash"></i></div>
+              <div class="cert-info">
+                <h5>Python for Beginners — Mastering the Essentials</h5>
+                <p>Scaler</p>
+                <span class="cert-year">2024 · Verified Certificate</span>
+              </div>
+            </a>
+          </div>
+
+          <div class="col-lg-4 col-md-6">
+            <div class="cert-card" style="cursor:default;">
+              <div class="cert-icon"><i class="bi bi-mortarboard"></i></div>
+              <div class="cert-info">
+                <h5>Bachelor of Arts (B.A)</h5>
+                <p>Swami Vivekanand Subharti University, Meerut</p>
+                <span class="cert-year">2022 · Degree</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6">
+            <div class="cert-card" style="cursor:default;">
+              <div class="cert-icon"><i class="bi bi-laptop"></i></div>
+              <div class="cert-info">
+                <h5>Diploma in Computer Application (DCA)</h5>
+                <p>Best One Academy, Chandigarh</p>
+                <span class="cert-year">2015 · Diploma</span>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
 
     <!-- Resume Section -->
     <section id="resume" class="resume section">
-
-      <!-- Section Title -->
       <div class="container section-title" data-aos="fade-up">
-        <h2>Resume</h2>
-        <!-- <p>Magnam dolores commodi suscipit. Necessitatibus eius consequatur ex aliquid fuga eum quidem. Sit sint
-          consectetur velit. Quisquam quos quisquam cupiditate. Et nemo qui impedit suscipit alias ea. Quia fugiat sit
-          in iste officiis commodi quidem hic quas.</p> -->
-      </div><!-- End Section Title -->
+        <h2>Experience</h2>
+        <p class="mt-2">A decade of delivering data solutions across industries.</p>
+      </div>
 
       <div class="container">
-
         <div class="row">
 
+          <!-- Left Col: Education -->
           <div class="col-lg-6" data-aos="fade-up" data-aos-delay="100">
-            <!-- <h3 class="resume-title">Sumary</h3> -->
+            <h3 class="resume-title">Education & Certifications</h3>
 
-            <!-- <div class="resume-item pb-0">
-              <h4>Brandon Johnson</h4>
-              <p><em>Innovative and deadline-driven Graphic Designer with 3+ years of experience designing and
-                  developing user-centered digital/print marketing material from initial concept to final, polished
-                  deliverable.</em></p>
-              <ul>
-                <li>Portland par 127,Orlando, FL</li>
-                <li>(123) 456-7891</li>
-                <li>alice.barkley@example.com</li>
-              </ul>
-
-            </div> -->
-
-
-            <!-- Edn Resume Item -->
-
-            <h3 class="resume-title">Education</h3>
             <div class="resume-item">
-              <h4>introduction to artificial intelligence</h4>
+              <h4>Introduction to Artificial Intelligence</h4>
               <h5>2024</h5>
-              <p><em><a target="_blank"
-                    href="https://www.mygreatlearning.com/certificate/PGQYFBPV">www.mygreatlearning.com</a></em></p>
-
-
+              <p><em><a href="https://www.mygreatlearning.com/certificate/PGQYFBPV" target="_blank">Great Learning — Verified</a></em></p>
             </div>
+
             <div class="resume-item">
               <h4>Excel for Data Science for Beginners</h4>
               <h5>2024</h5>
-              <p><em><a target="_blank"
-                    href="https://www.mygreatlearning.com/certificate/LERLHFSR">www.mygreatlearning.com</a></em></p>
-
-
+              <p><em><a href="https://www.mygreatlearning.com/certificate/LERLHFSR" target="_blank">Great Learning — Verified</a></em></p>
             </div>
 
             <div class="resume-item">
-              <h4>Python Course for Beginners With Certification: Mastering the Essentials</h4>
+              <h4>Python for Beginners: Mastering the Essentials</h4>
               <h5>2024</h5>
-              <p><em><a target="_blank" href="https://moonshot.scaler.com/s/sl/nAVP8uuFfk">www.scaler.com</a></em></p>
-
-              <!-- <p>Qui deserunt veniam. Et sed aliquam labore tempore sed quisquam iusto autem sit. Ea vero voluptatum qui
-                ut dignissimos deleniti nerada porti sand markend</p> -->
-
+              <p><em><a href="https://moonshot.scaler.com/s/sl/nAVP8uuFfk" target="_blank">Scaler — Verified</a></em></p>
             </div>
 
             <div class="resume-item">
-              <h4>Bachelor's IN Arts (B.A)</h4>
+              <h4>Bachelor of Arts (B.A)</h4>
               <h5>2022</h5>
-              <p><em>SWAMI VIVEKANAND SUBHARTI UNIVERSITY, MEERUT</em></p>
-
-              <!-- <p>Qui deserunt veniam. Et sed aliquam labore tempore sed quisquam iusto autem sit. Ea vero voluptatum qui
-                ut dignissimos deleniti nerada porti sand markend</p> -->
-
+              <p><em>Swami Vivekanand Subharti University, Meerut</em></p>
             </div>
 
-
-            <!-- Edn Resume Item -->
-
             <div class="resume-item">
-              <h4>DIPLOMA IN COMPUTER APPLICATION (DCA)</h4>
+              <h4>Diploma in Computer Application (DCA)</h4>
               <h5>2015</h5>
-              <p><em>BEST ONE ACADEMEY, CHANDIGARH</em></p>
-              <!-- <p>Quia nobis sequi est occaecati aut. Repudiandae et iusto quae reiciendis et quis Eius vel ratione eius
-                unde vitae rerum voluptates asperiores voluptatem Earum molestiae consequatur neque etlon sader mart
-                dila</p> -->
-            </div><!-- Edn Resume Item -->
-
+              <p><em>Best One Academy, Chandigarh</em></p>
+            </div>
           </div>
 
+          <!-- Right Col: Work Experience -->
           <div class="col-lg-6" data-aos="fade-up" data-aos-delay="200">
             <h3 class="resume-title">Professional Experience</h3>
+
             <div class="resume-item">
-              <h4>Deputy Manager</h4>
-              <h5>2024-Present</h5>
-              <p><em><a href="livasa.html" style="font-weight: bold;">Livasa Hospitals - Corporate Office Mohali,
-                    Punjab</a></em></p>
+              <h4>Deputy Manager — MIS & Business Intelligence</h4>
+              <h5>2024 – Present</h5>
+              <p><em><a href="livasa.html">Livasa Hospitals – Corporate Office, Mohali, Punjab</a></em></p>
               <ul>
-                <li>Generate dispatch reports from HMS (Hospital Management System) across 5 hospital locations and
-                  consolidate historical patient data from 2019–present (100,000 of records).
-                </li>
-                <li>Monitor insurance billing and claim submissions for schemes such as CGHS, ESIC, ECHS, CAPF, and TPA
-                  .</li>
-                <li>Prepare Unbilled Revenue Patient-wise reports tracking provisional billing vs advance payments for
-                  admitted patients.</li>
+                <li>Generate dispatch reports from HMS (Hospital Management System) across 5 hospital locations and consolidate historical patient data from 2019–present (100,000+ records).</li>
+                <li>Monitor insurance billing and claim submissions for schemes such as CGHS, ESIC, ECHS, CAPF, and TPA.</li>
+                <li>Prepare Unbilled Revenue Patient-wise reports tracking provisional billing vs advance payments for admitted patients.</li>
                 <li>Monitor authorization discount approvals for patient billing cases.</li>
-                <li>Handle insurance query reports (NMI) for ECHS, ESIC, and TMS schemes and coordinate with relevant
-                  departments for resolution.</li>
+                <li>Handle insurance query reports (NMI) for ECHS, ESIC, and TMS schemes and coordinate with relevant departments for resolution.</li>
                 <li>Prepare stage-wise and status-wise consolidated insurance claim reports for management review.</li>
-                <li>Use Excel automation, Python scripts, and AI tools to streamline reporting processes and improve
-                  efficiency. <a href="livasa.html" style="font-weight: bold;">more</a></li>
+                <li>Use Excel automation, Python scripts, and AI tools to streamline reporting processes and improve efficiency. <a href="livasa.html" style="font-weight:bold;">View Full Details →</a></li>
               </ul>
-            </div><!-- Edn Resume Item -->
+            </div>
+
             <div class="resume-item">
               <h4>MIS Manager</h4>
-              <h5>2023-2024</h5>
+              <h5>2023 – 2024</h5>
               <p><em>Trycyfer Technologies Pvt. Ltd, Mohali, Punjab</em></p>
               <ul>
-                <li>Maintain and update CRM with comprehensive client details including basic and financial information.
-                </li>
-                <li>Prepare monthly closing reports highlighting new client acquisitions and renewals, encompassing over
-                  100 clients.</li>
-                <li>Spearhead projects such as the launch of a new ERP system integrated with CRM and project management
-                  capabilities.</li>
-                <li>Serve as a subject matter expert in the data team, emphasizing the importance of accurate and
-                  reliable data management.</li>
-                <li>Oversee operations management, addressing departmental conflicts and enhancing roles and
-                  responsibilities to ensure streamlined processes.</li>
+                <li>Maintain and update CRM with comprehensive client details including basic and financial information.</li>
+                <li>Prepare monthly closing reports highlighting new client acquisitions and renewals, encompassing over 100 clients.</li>
+                <li>Spearhead projects such as the launch of a new ERP system integrated with CRM and project management capabilities.</li>
+                <li>Serve as a subject matter expert in the data team, emphasizing the importance of accurate and reliable data management.</li>
+                <li>Oversee operations management, addressing departmental conflicts and enhancing roles and responsibilities to ensure streamlined processes.</li>
               </ul>
-            </div><!-- Edn Resume Item -->
+            </div>
 
             <div class="resume-item">
               <h4>MIS Executive</h4>
-              <h5>2022-2023</h5>
-              <p><em> ROWTH TECH, CHANDIGARH</em></p>
+              <h5>2022 – 2023</h5>
+              <p><em>Rowth Tech, Chandigarh</em></p>
               <ul>
-                <li>Managed data of 700 Vehicle Variants and conducted maintenance pricewise from multiple brands every
-                  month.</li>
-                <li>Conducted and Managed monthly offer updates on the 700 Variants by 2 parties; Manufacturers and
-                  Dealers.</li>
-                <li>Updated Data of leads on a Monthly and Daily basis and maintained 5-6 Excel Sheets.</li>
-                <li>Created 20+ MIS reports as per the instruction of the Managing Director using tools like MS Excel,
-                  Google Sheets, Google Data Studio.</li>
-
+                <li>Managed data of 700 Vehicle Variants and conducted maintenance price-wise from multiple brands every month.</li>
+                <li>Conducted and managed monthly offer updates on the 700 Variants by 2 parties: Manufacturers and Dealers.</li>
+                <li>Updated data of leads on a monthly and daily basis and maintained 5–6 Excel Sheets.</li>
+                <li>Created 20+ MIS reports as per the instruction of the Managing Director using tools like MS Excel, Google Sheets, and Google Data Studio.</li>
               </ul>
-            </div><!-- Edn Resume Item -->
+            </div>
+
             <div class="resume-item">
-              <h4>DATA MANAGEMENT EXECUTIVE</h4>
-              <h5>2020-2021</h5>
-              <p><em> HI-TECH FORMULATIONS</em></p>
+              <h4>Data Management Executive</h4>
+              <h5>2020 – 2021</h5>
+              <p><em>Hi-Tech Formulations</em></p>
               <ul>
                 <li>Created 20+ Flow Chart Management Systems (FMS) using Excel tools like Google Sheets.</li>
-                <li>Conducted regular data-updates on the Flow Chart Management Systems using 2 Tools: Google Data
-                  Studio and Google Sheets.</li>
-                <li>Documented the process in a Video Format and organized 10+ Videos in Google Classroom and managed
-                  through Google Data Studio.</li>
-
+                <li>Conducted regular data-updates on the Flow Chart Management Systems using 2 tools: Google Data Studio and Google Sheets.</li>
+                <li>Documented the process in a video format and organized 10+ videos in Google Classroom and managed through Google Data Studio.</li>
               </ul>
             </div>
 
             <div class="resume-item">
-              <h4>Freelance</h4>
-              <h5>2017-2021</h5>
-              <p><em>MIS EXECUTIVE</em></p>
+              <h4>Freelance MIS Executive</h4>
+              <h5>2017 – 2021</h5>
+              <p><em>Independent — Multiple Clients</em></p>
               <ul>
-                <li>Managed several clients in 4+ Years of Experience as a Freelance MIS Executive.</li>
-                <li>Prepared 160+ MIS Reports on a daily, weekly, monthly, quarterly, half yearly, yearly basis.</li>
-                <li>Conducted analysis of data; monitored, updated and consolidated Sale Report Data.</li>
-                <li>Utilized and gained Expertise in 3 tools: Power BI, Power Query, MS Access.</li>
+                <li>Managed several clients across 4+ years of experience as a Freelance MIS Executive.</li>
+                <li>Prepared 160+ MIS Reports on a daily, weekly, monthly, quarterly, half-yearly, and yearly basis.</li>
+                <li>Conducted analysis of data; monitored, updated, and consolidated Sale Report Data.</li>
+                <li>Utilized and gained expertise in 3 tools: Power BI, Power Query, and MS Access.</li>
               </ul>
             </div>
 
             <div class="resume-item">
-              <h4>Freelance</h4>
-              <h5>2017-2021</h5>
-              <p><em>WordPress Web Developer</em></p>
+              <h4>Freelance WordPress Web Developer</h4>
+              <h5>2017 – 2021</h5>
+              <p><em>Independent — Multiple Clients</em></p>
               <ul>
                 <li>Executed 20+ Website Modification Projects and utilized HTML and CSS.</li>
-                <li>Provided end-to-end Website solutions to 25+ clients.</li>
-                <li>Services included: Domain & Hosting Selection, CMS Installation like WordPress, theme selection and
-                  developing a website with Images and Content. </li>
-
-
+                <li>Provided end-to-end website solutions to 25+ clients.</li>
+                <li>Services included: Domain & Hosting Selection, CMS Installation (WordPress), theme selection, and developing a website with images and content.</li>
               </ul>
             </div>
 
             <div class="resume-item">
-              <h4>MIS EXECUTIVE</h4>
-              <h5>2016-2017</h5>
-              <p><em>BEST ONE ACADEMEY</em></p>
+              <h4>MIS Executive</h4>
+              <h5>2016 – 2017</h5>
+              <p><em>Best One Academy, Chandigarh</em></p>
               <ul>
-                <li>Created Monthly Admission Finance Reports, maintained Candidate Admission Record using Excel with
-                  fee records and assisted with other tasks instructed by the Managing Director</li>
+                <li>Created Monthly Admission Finance Reports, maintained Candidate Admission Record using Excel with fee records and assisted with other tasks instructed by the Managing Director.</li>
               </ul>
             </div>
 
             <div class="resume-item">
-              <h4>BACK-OFFICE DATA EXCUTIVE</h4>
-              <h5>2014-2016</h5>
-              <p><em>BHAGAT FORD</em></p>
+              <h4>Back-Office Data Executive</h4>
+              <h5>2014 – 2016</h5>
+              <p><em>Bhagat Ford</em></p>
               <ul>
                 <li>Coordinated with Sales Executives from 12 Branches to collect Insurance Data.</li>
-                <li>Generated 5-10 Insurance Policies for customers on a Daily-Basis through the Genisys Insurance
-                  Portal.</li>
+                <li>Generated 5–10 Insurance Policies for customers on a daily basis through the Genisys Insurance Portal.</li>
                 <li>Managed the coordination of sales across 12 Branches for New and Renewed Insurance Policies.</li>
-                <li>Created 5-10 MIS Reports for Insurance Finance.</li>
-                <li>Coordinated with 12 Service Managers across branches to collect Daily Service Finance Report.</li>
+                <li>Created 5–10 MIS Reports for Insurance Finance.</li>
+                <li>Coordinated with 12 Service Managers across branches to collect Daily Service Finance Reports.</li>
               </ul>
             </div>
 
             <div class="resume-item">
               <h4>Other Technical Experience</h4>
-              <h5>2004-2026</h5>
-              <p><em><a href="other.html" style="font-weight: bold;">Other Technical Experience</a></em></p>
+              <h5>2004 – Present</h5>
+              <p><em><a href="other.html" style="font-weight:bold;">Other Technical Experience →</a></em></p>
               <ul>
-                <li><strong>Computer Hardware Troubleshooting</strong> – Diagnose and resolve desktop, laptop, and
-                  hardware-related issues.</li>
-
-                <li><strong>Windows & Linux Installation</strong> – Install, configure, and manage Windows and Linux
-                  operating systems.</li>
-
-                <li><strong>Software Installation & Troubleshooting</strong> – Install applications, resolve software
-                  errors, and optimize system performance.</li>
-
-                <li><strong>Basic Networking & System Configuration</strong> – Configure basic network settings,
-                  connectivity, and system support.</li>
-
-                <li><strong>Desktop & Laptop Maintenance</strong> – Perform system maintenance, upgrades, formatting,
-                  and operating system setup.</li>
-
-                <li><strong>Technical Support & IT Assistance</strong> – Provide day-to-day technical support to ensure
-                  smooth and efficient operations. <a href="other.html" style="font-weight: bold;">more</a></li></li>
+                <li><strong>Computer Hardware Troubleshooting</strong> – Diagnose and resolve desktop, laptop, and hardware-related issues.</li>
+                <li><strong>Windows & Linux Installation</strong> – Install, configure, and manage Windows and Linux operating systems.</li>
+                <li><strong>Software Installation & Troubleshooting</strong> – Install applications, resolve software errors, and optimize system performance.</li>
+                <li><strong>Basic Networking & System Configuration</strong> – Configure basic network settings, connectivity, and system support.</li>
               </ul>
             </div>
-
-
           </div>
 
         </div>
-
-    </section><!-- /Resume Section -->
+      </div>
+    </section>
 
     <!-- Portfolio Section -->
     <section id="portfolio" class="portfolio section light-background">
-
-      <!-- Section Title -->
       <div class="container section-title" data-aos="fade-up">
-        <h2>Project for Portfolio</h2>
-        <p>I apologize for not uploading more projects, as they are client-specific and must remain private to respect
-          confidentiality. </p>
-      </div>
-      <!-- End Section Title -->
-
-      <div class="container">
-
-        <div class="isotope-layout" data-default-filter="*" data-layout="masonry" data-sort="original-order">
-
-          <ul class="portfolio-filters isotope-filters" data-aos="fade-up" data-aos-delay="100">
-            <!-- <li data-filter="*" class="filter-active">Project</li> -->
-            <!-- <li data-filter=".filter-app"></li>
-            <li data-filter=".filter-product">Product</li>
-            <li data-filter=".filter-branding">Branding</li>
-            <li data-filter=".filter-books">Books</li> -->
-          </ul><!-- End Portfolio Filters -->
-
-          <div class="row gy-4 isotope-container" data-aos="fade-up" data-aos-delay="200">
-
-            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-app">
-              <div class="portfolio-content h-100">
-                <img src="assets/img/portfolio/cridit-Sale.JPG" class="img-fluid" alt="">
-                <div class="portfolio-info">
-                  <h4>Power Bi Dashboard </h4>
-                  <p>Credit Card Sale Power Bi Dashboard</p>
-                  <a href="assets/img/portfolio/app-1.jpg" title="App 1" data-gallery="portfolio-gallery-app"
-                    class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
-                  <a href="portfolio-details.html" title="More Details" class="details-link"><i
-                      class="bi bi-link-45deg"></i></a>
-                </div>
-              </div>
-            </div><!-- End Portfolio Item -->
-
-            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-product">
-              <div class="portfolio-content h-100">
-                <img src="assets/img/portfolio/cridit-Sale2.JPG" class="img-fluid" alt="">
-                <div class="portfolio-info">
-                  <h4>Power Bi Dashboard </h4>
-                  <p>Credit Card Sale2 Power Bi Dashboard </p>
-                  <a href="assets/img/portfolio/product-1.jpg" title="Product 1"
-                    data-gallery="portfolio-gallery-product" class="glightbox preview-link"><i
-                      class="bi bi-zoom-in"></i></a>
-                  <a href="portfolio-details.html" title="More Details" class="details-link"><i
-                      class="bi bi-link-45deg"></i></a>
-                </div>
-              </div>
-            </div><!-- End Portfolio Item -->
-
-            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-branding">
-              <div class="portfolio-content h-100">
-                <img src="assets/img/portfolio/coffec.JPG" class="img-fluid" alt="">
-                <div class="portfolio-info">
-                  <h4>Coffee Shop Sales</h4>
-                  <p>Coffee Shop Sales Project Dashboard</p>
-                  <a href="assets/img/portfolio/branding-1.jpg" title="Branding 1"
-                    data-gallery="portfolio-gallery-branding" class="glightbox preview-link"><i
-                      class="bi bi-zoom-in"></i></a>
-                  <a href="portfolio-details.html" title="More Details" class="details-link"><i
-                      class="bi bi-link-45deg"></i></a>
-                </div>
-              </div>
-            </div>
-
-            <!-- End Portfolio Item  This -->
-
-            <!-- <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-books">
-              <div class="portfolio-content h-100">
-                <img src="assets/img/portfolio/books-1.jpg" class="img-fluid" alt="">
-                <div class="portfolio-info">
-                  <h4>Books 1</h4>
-                  <p>Lorem ipsum, dolor sit amet consectetur</p>
-                  <a href="assets/img/portfolio/books-1.jpg" title="Branding 1" data-gallery="portfolio-gallery-book" 
-                    class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
-                  <a href="portfolio-details.html" title="More Details" class="details-link"><i
-                      class="bi bi-link-45deg"></i></a>
-                </div>
-              </div>
-            </div><!-- End Portfolio Item -->
-
-            <!-- <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-app">
-              <div class="portfolio-content h-100">
-                <img src="assets/img/portfolio/app-2.jpg" class="img-fluid" alt="">
-                <div class="portfolio-info">
-                  <h4>App 2</h4>
-                  <p>Lorem ipsum, dolor sit amet consectetur</p>
-                  <a href="assets/img/portfolio/app-2.jpg" title="App 2" data-gallery="portfolio-gallery-app"
-                    class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
-                  <a href="portfolio-details.html" title="More Details" class="details-link"><i
-                      class="bi bi-link-45deg"></i></a>
-                </div>
-              </div>
-            </div> -->
-
-
-            <!-- End Portfolio Item -->
-
-            <!-- <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-product">
-              <div class="portfolio-content h-100">
-                <img src="assets/img/portfolio/product-2.jpg" class="img-fluid" alt="">
-                <div class="portfolio-info">
-                  <h4>Product 2</h4>
-                  <p>Lorem ipsum, dolor sit amet consectetur</p>
-                  <a href="assets/img/portfolio/product-2.jpg" title="Product 2"
-                    data-gallery="portfolio-gallery-product" class="glightbox preview-link"><i
-                      class="bi bi-zoom-in"></i></a>
-                  <a href="portfolio-details.html" title="More Details" class="details-link"><i
-                      class="bi bi-link-45deg"></i></a>
-                </div>
-              </div>
-            </div> -->
-
-
-            <!-- End Portfolio Item -->
-
-            <!-- <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-branding">
-              <div class="portfolio-content h-100">
-                <img src="assets/img/portfolio/branding-2.jpg" class="img-fluid" alt="">
-                <div class="portfolio-info">
-                  <h4>Branding 2</h4>
-                  <p>Lorem ipsum, dolor sit amet consectetur</p>
-                  <a href="assets/img/portfolio/branding-2.jpg" title="Branding 2"
-                    data-gallery="portfolio-gallery-branding" class="glightbox preview-link"><i
-                      class="bi bi-zoom-in"></i></a>
-                  <a href="portfolio-details.html" title="More Details" class="details-link"><i
-                      class="bi bi-link-45deg"></i></a>
-                </div>
-              </div>
-            </div> -->
-
-
-
-            <!-- <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-books">
-              <div class="portfolio-content h-100">
-                <img src="assets/img/portfolio/books-2.jpg" class="img-fluid" alt="">
-                <div class="portfolio-info">
-                  <h4>Books 2</h4>
-                  <p>Lorem ipsum, dolor sit amet consectetur</p>
-                  <a href="assets/img/portfolio/books-2.jpg" title="Branding 2" data-gallery="portfolio-gallery-book"
-                    class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
-                  <a href="portfolio-details.html" title="More Details" class="details-link"><i
-                      class="bi bi-link-45deg"></i></a>
-                </div>
-              </div>
-            </div> -->
-
-            <!-- End Portfolio Item -->
-
-            <!-- <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-app">
-              <div class="portfolio-content h-100">
-                <img src="assets/img/portfolio/app-3.jpg" class="img-fluid" alt="">
-                <div class="portfolio-info">
-                  <h4>App 3</h4>
-                  <p>Lorem ipsum, dolor sit amet consectetur</p>
-                  <a href="assets/img/portfolio/app-3.jpg" title="App 3" data-gallery="portfolio-gallery-app"
-                    class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
-                  <a href="portfolio-details.html" title="More Details" class="details-link"><i
-                      class="bi bi-link-45deg"></i></a>
-                </div>
-              </div>
-            </div> -->
-
-
-            <!-- End Portfolio Item -->
-
-            <!-- <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-product">
-              <div class="portfolio-content h-100">
-                <img src="assets/img/portfolio/product-3.jpg" class="img-fluid" alt="">
-                <div class="portfolio-info">
-                  <h4>Product 3</h4>
-                  <p>Lorem ipsum, dolor sit amet consectetur</p>
-                  <a href="assets/img/portfolio/product-3.jpg" title="Product 3"
-                    data-gallery="portfolio-gallery-product" class="glightbox preview-link"><i
-                      class="bi bi-zoom-in"></i></a>
-                  <a href="portfolio-details.html" title="More Details" class="details-link"><i
-                      class="bi bi-link-45deg"></i></a>
-                </div>
-              </div>
-            </div> -->
-
-            <!-- End Portfolio Item -->
-
-            <!-- <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-branding">
-              <div class="portfolio-content h-100">
-                <img src="assets/img/portfolio/branding-3.jpg" class="img-fluid" alt="">
-                <div class="portfolio-info">
-                  <h4>Branding 3</h4>
-                  <p>Lorem ipsum, dolor sit amet consectetur</p>
-                  <a href="assets/img/portfolio/branding-3.jpg" title="Branding 2"
-                    data-gallery="portfolio-gallery-branding" class="glightbox preview-link"><i
-                      class="bi bi-zoom-in"></i></a>
-                  <a href="portfolio-details.html" title="More Details" class="details-link"><i
-                      class="bi bi-link-45deg"></i></a>
-                </div>
-              </div>
-            </div> -->
-            <!-- End Portfolio Item -->
-
-            <!-- <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-books">
-              <div class="portfolio-content h-100">
-                <img src="assets/img/portfolio/books-3.jpg" class="img-fluid" alt="">
-                <div class="portfolio-info">
-                  <h4>Books 3</h4>
-                  <p>Lorem ipsum, dolor sit amet consectetur</p>
-                  <a href="assets/img/portfolio/books-3.jpg" title="Branding 3" data-gallery="portfolio-gallery-book"
-                    class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
-                  <a href="portfolio-details.html" title="More Details" class="details-link"><i
-                      class="bi bi-link-45deg"></i></a>
-                </div>
-              </div>
-            </div> -->
-
-
-            <!-- End Portfolio Item -->
-
-          </div><!-- End Portfolio Container -->
-
-        </div>
-
+        <h2>Portfolio</h2>
+        <p class="mt-2">Selected data projects. Most client work is confidential — shown with permission or anonymized.</p>
       </div>
 
-    </section><!-- /Portfolio Section -->
-
-    <!-- Services Section -->
-
-    <section id="services" class="services section">
-
-      <!-- Section Title -->
-      <div class="container section-title" data-aos="fade-up">
-        <h2>Services</h2>
-        <p>Delivering expert services in MIS reporting, data analysis, CRM management, and WordPress development.
-          Specialized in creating automated dashboards, optimizing workflows,
-          and building dynamic websites. Skilled in Power BI, Google Sheets, MS Excel, and project management solutions
-        </p>
-      </div><!-- End Section Title -->
-
       <div class="container">
+        <div class="row gy-4" data-aos="fade-up" data-aos-delay="200">
 
-        <div class="row gy-4">
-
-          <div class="col-lg-4 col-md-6 service-item d-flex" data-aos="fade-up" data-aos-delay="100">
-            <div class="icon flex-shrink-0"><i class="bi bi-briefcase"></i></div>
-            <div>
-              <h4 class="title"><a href="#" class="stretched-link">MIS Reporting and Dashboard Creation</a></h4>
-              <!-- <p class="description">Voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sintoccaecati cupiditate non provident</p> -->
+          <div class="col-lg-4 col-md-6">
+            <div class="portfolio-content h-100">
+              <img src="assets/img/portfolio/cridit-Sale.JPG" class="img-fluid" alt="Credit Card Sales Power BI Dashboard">
+              <div class="portfolio-info">
+                <h4>Power BI Dashboard</h4>
+                <p>Credit Card Sales Analytics</p>
+                <a href="assets/img/portfolio/cridit-Sale.JPG" title="Credit Card Dashboard" data-gallery="portfolio-gallery-product" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
+                <a href="portfolio-details.html" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a>
+              </div>
             </div>
           </div>
-          <!-- End Service Item -->
 
-          <div class="col-lg-4 col-md-6 service-item d-flex" data-aos="fade-up" data-aos-delay="200">
-            <div class="icon flex-shrink-0"><i class="bi bi-card-checklist"></i></div>
-            <div>
-              <h4 class="title"><a href="#" class="stretched-link">Data Analysis and Visualization</a></h4>
-              <!-- <p class="description">Minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
-                commodo consequat tarad limino ata</p> -->
+          <div class="col-lg-4 col-md-6">
+            <div class="portfolio-content h-100">
+              <img src="assets/img/portfolio/cridit-Sale2.JPG" class="img-fluid" alt="Credit Card Sales Dashboard 2">
+              <div class="portfolio-info">
+                <h4>Power BI Dashboard</h4>
+                <p>Credit Card Sales Deep Dive</p>
+                <a href="assets/img/portfolio/cridit-Sale2.JPG" title="Credit Card Dashboard 2" data-gallery="portfolio-gallery-product" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
+                <a href="portfolio-details.html" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a>
+              </div>
             </div>
-          </div><!-- End Service Item -->
+          </div>
 
-          <div class="col-lg-4 col-md-6 service-item d-flex" data-aos="fade-up" data-aos-delay="300">
-            <div class="icon flex-shrink-0"><i class="bi bi-bar-chart"></i></div>
-            <div>
-              <h4 class="title"><a href="#" class="stretched-link">CRM and ERP Management</a></h4>
-              <!-- <p class="description">Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu
-                fugiat nulla pariatur</p> -->
+          <div class="col-lg-4 col-md-6">
+            <div class="portfolio-content h-100">
+              <img src="assets/img/portfolio/coffec.JPG" class="img-fluid" alt="Coffee Shop Sales Dashboard">
+              <div class="portfolio-info">
+                <h4>Excel / Data Studio</h4>
+                <p>Coffee Shop Sales Dashboard</p>
+                <a href="assets/img/portfolio/coffec.JPG" title="Coffee Shop Sales" data-gallery="portfolio-gallery-branding" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
+                <a href="portfolio-details.html" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a>
+              </div>
             </div>
-          </div><!-- End Service Item -->
-
-          <div class="col-lg-4 col-md-6 service-item d-flex" data-aos="fade-up" data-aos-delay="400">
-            <div class="icon flex-shrink-0"><i class="bi bi-binoculars"></i></div>
-            <div>
-              <h4 class="title"><a href="#" class="stretched-link">Website Development</a></h4>
-              <!-- <p class="description">Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt
-                mollit anim id est laborum</p> -->
-            </div>
-          </div><!-- End Service Item -->
-
-          <div class="col-lg-4 col-md-6 service-item d-flex" data-aos="fade-up" data-aos-delay="500">
-            <div class="icon flex-shrink-0"><i class="bi bi-brightness-high"></i></div>
-            <div>
-              <h4 class="title"><a href="#" class="stretched-link">Project Management</a></h4>
-              <!-- <p class="description">At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis
-                praesentium voluptatum deleniti atque</p> -->
-            </div>
-          </div><!-- End Service Item -->
-
-          <div class="col-lg-4 col-md-6 service-item d-flex" data-aos="fade-up" data-aos-delay="600">
-            <div class="icon flex-shrink-0"><i class="bi bi-calendar4-week"></i></div>
-            <div>
-              <h4 class="title"><a href="#">Data Maintenance</a></h4>
-              <!-- <p class="description">Et harum quidem rerum facilis est et expedita distinctio. Nam libero tempore, cum
-                soluta nobis est eligendi</p> -->
-            </div>
-          </div><!-- End Service Item -->
+          </div>
 
         </div>
-
       </div>
-
     </section>
 
-
-
-    <!-- /Services Section -->
-
-    <!-- Testimonials Section -->
-    <!-- <section id="testimonials" class="testimonials section light-background">
-
-      <!-- Section Title -->
-    <!-- <div class="container section-title" data-aos="fade-up">
-        <h2>Testimonials</h2>
-        <p>Necessitatibus eius consequatur ex aliquid fuga eum quidem sint consectetur velit</p>
-      </div> -->
-
-    <!-- End Section Title -->
-
-    <!-- <div class="container" data-aos="fade-up" data-aos-delay="100">
-
-        <div class="swiper init-swiper">
-          <script type="application/json" class="swiper-config">
-            {
-              "loop": true,
-              "speed": 600,
-              "autoplay": {
-                "delay": 5000
-              },
-              "slidesPerView": "auto",
-              "pagination": {
-                "el": ".swiper-pagination",
-                "type": "bullets",
-                "clickable": true
-              },
-              "breakpoints": {
-                "320": {
-                  "slidesPerView": 1,
-                  "spaceBetween": 40
-                },
-                "1200": {
-                  "slidesPerView": 3,
-                  "spaceBetween": 1
-                }
-              }
-            }
-          </script> -->
-    <!-- <div class="swiper-wrapper">
-
-            <div class="swiper-slide">
-              <div class="testimonial-item">
-                <p>
-                  <i class="bi bi-quote quote-icon-left"></i>
-                  <span>Proin iaculis purus consequat sem cure digni ssim donec porttitora entum suscipit rhoncus.
-                    Accusantium quam, ultricies eget id, aliquam eget nibh et. Maecen aliquam, risus at semper.</span>
-                  <i class="bi bi-quote quote-icon-right"></i>
-                </p>
-                <img src="assets/img/testimonials/testimonials-1.jpg" class="testimonial-img" alt="">
-                <h3>Saul Goodman</h3>
-                <h4>Ceo &amp; Founder</h4>
-              </div>
-            </div><!-- End testimonial item -->
-
-    <!-- <div class="swiper-slide">
-              <div class="testimonial-item">
-                <p>
-                  <i class="bi bi-quote quote-icon-left"></i>
-                  <span>Export tempor illum tamen malis malis eram quae irure esse labore quem cillum quid malis quorum
-                    velit fore eram velit sunt aliqua noster fugiat irure amet legam anim culpa.</span>
-                  <i class="bi bi-quote quote-icon-right"></i>
-                </p>
-                <img src="assets/img/testimonials/testimonials-2.jpg" class="testimonial-img" alt="">
-                <h3>Sara Wilsson</h3>
-                <h4>Designer</h4>
-              </div>
-            </div> -->
-
-    <!-- <-- End testimonial item -->
-
-    <!-- <div class="swiper-slide">
-              <div class="testimonial-item">
-                <p>
-                  <i class="bi bi-quote quote-icon-left"></i>
-                  <span>Enim nisi quem export duis labore cillum quae magna enim sint quorum nulla quem veniam duis
-                    minim tempor labore quem eram duis noster aute amet eram fore quis sint minim.</span>
-                  <i class="bi bi-quote quote-icon-right"></i>
-                </p>
-                <img src="assets/img/testimonials/testimonials-3.jpg" class="testimonial-img" alt="">
-                <h3>Jena Karlis</h3>
-                <h4>Store Owner</h4>
-              </div>
-            </div><!-- End testimonial item -->
-
-    <!-- <div class="swiper-slide">
-              <div class="testimonial-item">
-                <p>
-                  <i class="bi bi-quote quote-icon-left"></i>
-                  <span>Fugiat enim eram quae cillum dolore dolor amet nulla culpa multos export minim fugiat dolor enim
-                    duis veniam ipsum anim magna sunt elit fore quem dolore labore illum veniam.</span>
-                  <i class="bi bi-quote quote-icon-right"></i>
-                </p>
-                <img src="assets/img/testimonials/testimonials-4.jpg" class="testimonial-img" alt="">
-                <h3>Matt Brandon</h3>
-                <h4>Freelancer</h4>
-              </div>
-            </div> -->
-
-
-    <!-- End testimonial item -->
-
-    <!-- <div class="swiper-slide">
-              <div class="testimonial-item">
-                <p>
-                  <i class="bi bi-quote quote-icon-left"></i>
-                  <span>Quis quorum aliqua sint quem legam fore sunt eram irure aliqua veniam tempor noster veniam sunt
-                    culpa nulla illum cillum fugiat legam esse veniam culpa fore nisi cillum quid.</span>
-                  <i class="bi bi-quote quote-icon-right"></i>
-                </p>
-                <img src="assets/img/testimonials/testimonials-5.jpg" class="testimonial-img" alt="">
-                <h3>John Larson</h3>
-                <h4>Entrepreneur</h4>
-              </div>
-            </div> -->
-
-
-    <!-- End testimonial item -->
-
-    <!-- </div>
-          <div class="swiper-pagination"></div>
-        </div>
-
+    <!-- Services Section -->
+    <section id="services" class="services section">
+      <div class="container section-title" data-aos="fade-up">
+        <h2>Services</h2>
+        <p class="mt-2">What I can do for you — available for freelance projects after 7:00 PM IST.</p>
       </div>
 
-    </section> -->
+      <div class="container">
+        <div class="row gy-4">
 
+          <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="100">
+            <div class="service-item">
+              <div class="icon"><i class="bi bi-graph-up-arrow"></i></div>
+              <h4>MIS Reporting & Dashboard Creation</h4>
+              <p>Daily, weekly, monthly reports. Custom dashboards in Excel, Google Sheets, or Data Studio tailored to your business needs.</p>
+            </div>
+          </div>
 
+          <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="200">
+            <div class="service-item">
+              <div class="icon"><i class="bi bi-bar-chart-line"></i></div>
+              <h4>Data Analysis & Visualization</h4>
+              <p>Transform raw data into clear, actionable insights using Power BI, Excel, and Google Data Studio.</p>
+            </div>
+          </div>
 
-    <!-- /Testimonials Section -->
+          <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="300">
+            <div class="service-item">
+              <div class="icon"><i class="bi bi-people-fill"></i></div>
+              <h4>CRM & ERP Management</h4>
+              <p>CRM setup, data maintenance, ERP integration, and client reporting pipelines for growing teams.</p>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="400">
+            <div class="service-item">
+              <div class="icon"><i class="bi bi-globe"></i></div>
+              <h4>Website Development</h4>
+              <p>WordPress websites from scratch — domain setup, hosting, theme, content. 25+ clients served.</p>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="500">
+            <div class="service-item">
+              <div class="icon"><i class="bi bi-clipboard2-check"></i></div>
+              <h4>Project & Operations Management</h4>
+              <p>Process documentation, workflow design, team coordination, and operational reporting support.</p>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="600">
+            <div class="service-item">
+              <div class="icon"><i class="bi bi-gear-wide-connected"></i></div>
+              <h4>Report Automation</h4>
+              <p>Reduce manual work using Excel macros, Python scripts, and AI-powered tools to automate repetitive reporting tasks.</p>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
 
     <!-- Contact Section -->
     <section id="contact" class="contact section">
-
-      <!-- Section Title -->
       <div class="container section-title" data-aos="fade-up">
-        <h2>Contact</h2>
-        <p></p>
-      </div><!-- End Section Title -->
+        <h2>Contact Me</h2>
+        <p class="mt-2">Have a project in mind? Let's talk. I respond to messages within 24 hours.</p>
+      </div>
 
       <div class="container" data-aos="fade-up" data-aos-delay="100">
-
         <div class="row gy-4">
 
           <div class="col-lg-5">
-
             <div class="info-wrap">
               <div class="info-item d-flex" data-aos="fade-up" data-aos-delay="200">
                 <i class="bi bi-geo-alt flex-shrink-0"></i>
                 <div>
-                  <h3>Address</h3>
+                  <h3>Location</h3>
                   <p>Kharar, Punjab, India</p>
                 </div>
-              </div><!-- End Info Item -->
+              </div>
 
               <div class="info-item d-flex" data-aos="fade-up" data-aos-delay="300">
-                <i class="bi bi-telephone flex-shrink-0"></i>
-                <div>
-                  <h3>Call Us</h3>
-                  <p>+91 75085-48860</p>
-                </div>
-              </div><!-- End Info Item -->
-
-              <div class="info-item d-flex" data-aos="fade-up" data-aos-delay="400">
                 <i class="bi bi-envelope flex-shrink-0"></i>
                 <div>
-                  <h3>Email Us</h3>
-                  <p>wordmsword@gmail.com</p>
+                  <h3>Email</h3>
+                  <p><a href="mailto:wordmsword@gmail.com" style="color:var(--gold-light)">wordmsword@gmail.com</a></p>
                 </div>
-              </div><!-- End Info Item -->
+              </div>
 
+              <div class="info-item d-flex" data-aos="fade-up" data-aos-delay="400">
+                <i class="bi bi-linkedin flex-shrink-0"></i>
+                <div>
+                  <h3>LinkedIn</h3>
+                  <p><a href="https://www.linkedin.com/in/onlinedipanjan" target="_blank" style="color:var(--gold-light)">linkedin.com/in/onlinedipanjan</a></p>
+                </div>
+              </div>
 
+              <div class="info-item d-flex" data-aos="fade-up" data-aos-delay="500">
+                <i class="bi bi-clock flex-shrink-0"></i>
+                <div>
+                  <h3>Freelance Hours</h3>
+                  <p>After 7:00 PM IST (Mon–Sat)</p>
+                </div>
+              </div>
             </div>
           </div>
 
           <div class="col-lg-7">
-            <form action="forms/contact.php" method="post" class="php-email-form" data-aos="fade-up"
-              data-aos-delay="200">
+            <form action="forms/contact.php" method="post" class="php-email-form" data-aos="fade-up" data-aos-delay="200">
               <div class="row gy-4">
-
                 <div class="col-md-6">
                   <label for="name-field" class="pb-2">Your Name</label>
-                  <input type="text" name="name" id="name-field" class="form-control" required="">
+                  <input type="text" name="name" id="name-field" class="form-control" required>
                 </div>
-
                 <div class="col-md-6">
                   <label for="email-field" class="pb-2">Your Email</label>
-                  <input type="email" class="form-control" name="email" id="email-field" required="">
+                  <input type="email" class="form-control" name="email" id="email-field" required>
                 </div>
-
                 <div class="col-md-12">
                   <label for="subject-field" class="pb-2">Subject</label>
-                  <input type="text" class="form-control" name="subject" id="subject-field" required="">
+                  <input type="text" class="form-control" name="subject" id="subject-field" required>
                 </div>
-
                 <div class="col-md-12">
                   <label for="message-field" class="pb-2">Message</label>
-                  <textarea class="form-control" name="message" rows="10" id="message-field" required=""></textarea>
+                  <textarea class="form-control" name="message" rows="6" id="message-field" required></textarea>
                 </div>
-
                 <div class="col-md-12 text-center">
                   <div class="loading">Loading</div>
                   <div class="error-message"></div>
                   <div class="sent-message">Your message has been sent. Thank you!</div>
-
-                  <button type="submit">Send Message</button>
+                  <button type="submit" style="background:var(--gold);color:var(--ink);border:none;padding:0.8rem 2.5rem;font-weight:700;border-radius:4px;cursor:pointer;transition:all 0.2s;">
+                    Send Message
+                  </button>
                 </div>
-
               </div>
             </form>
-          </div><!-- End Contact Form -->
+          </div>
 
         </div>
-
       </div>
-
-    </section><!-- /Contact Section -->
+    </section>
 
   </main>
 
-  <footer id="footer" class="footer position-relative light-background">
-
+  <footer id="footer" class="footer position-relative">
     <div class="container">
-      <div class="copyright text-center ">
-        <p>© <span>Copyright</span> <strong class="px-1 sitename">iPortfolio</strong> <span>All Rights Reserved</span>
+      <div class="copyright text-center py-3">
+        <p>© 2025 <strong style="color:var(--gold-light)">Dipanjan Karmakar</strong> · MIS Manager & Data Professional · All Rights Reserved</p>
+        <p style="font-size:0.78rem; margin-top:0.3rem;">
+          Template based on <a href="https://bootstrapmade.com/">BootstrapMade</a> iPortfolio
         </p>
       </div>
-      <div class="credits">
-        <!-- All the links in the footer should remain intact. -->
-        <!-- You can delete the links only if you've purchased the pro version. -->
-        <!-- Licensing information: https://bootstrapmade.com/license/ -->
-        <!-- Purchase the pro version with working PHP/AJAX contact form: [buy-url] -->
-        Designed by <a href="https://bootstrapmade.com/">BootstrapMade</a> Distributed by <a
-          href="https://themewagon.com">ThemeWagon</a>
-      </div>
     </div>
-
   </footer>
 
-  <!-- Scroll Top -->
-  <a href="#" id="scroll-top" class="scroll-top d-flex align-items-center justify-content-center"><i
-      class="bi bi-arrow-up-short"></i></a>
+  <a href="#" id="scroll-top" class="scroll-top d-flex align-items-center justify-content-center">
+    <i class="bi bi-arrow-up-short"></i>
+  </a>
 
-  <!-- Preloader -->
   <div id="preloader"></div>
 
   <!-- Vendor JS Files -->
@@ -1112,10 +1341,7 @@
   <script src="assets/vendor/imagesloaded/imagesloaded.pkgd.min.js"></script>
   <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
   <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
-
-  <!-- Main JS File -->
   <script src="assets/js/main.js"></script>
 
 </body>
-
 </html>
